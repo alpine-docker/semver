@@ -1,6 +1,6 @@
 # alpine/semver
 
-Docker image with [Node semver](https://github.com/semver/semver)
+Docker image with [Semantic Versioning 2.0.0](https://semver.org/)
 
 ## Usage
 ```bash
@@ -40,7 +40,3 @@ release:
 	git tag $(NEXT_VERSION)
 	git push --tags
 ```
-
-# Reference
-
-* [Semantic Versioning 2.0.0](https://semver.org/)

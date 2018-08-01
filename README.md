@@ -2,7 +2,15 @@
 
 Docker image with [Semantic Versioning 2.0.0](https://semver.org/)
 
-## Usage
+# Repo:
+
+https://github.com/alpine-docker/semver
+
+# Docker iamge tags:
+
+https://hub.docker.com/r/alpine/semver/tags/
+
+# Usage
 ```bash
 $ docker run --rm alpine/semver semver -c -i minor 1.0.2
 1.1.0

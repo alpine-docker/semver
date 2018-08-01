@@ -10,11 +10,14 @@ $ docker run --rm alpine/semver server -c -i minor 1.0.2
 ```
 ## Example
 ```bash
-$ docker run --rm marcelocorreia/semver server -c -i minor 1.1.0
-$ docker run --rm marcelocorreia/semver server -c -i minor $(git describe --tags --abbrev=0)
+$ docker run --rm marcelocorreia/semver semver -c -i minor 1.1.0
+$ docker run --rm marcelocorreia/semver semver -c -i minor $(git describe --tags --abbrev=0)
 ```
 
 # Full Example in Makefile
+
+* [Makefile](./Makefile)
+
 ```
 RELEASE_TYPE ?= patch
 

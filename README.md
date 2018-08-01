@@ -4,14 +4,14 @@ Docker image with [Semantic Versioning 2.0.0](https://semver.org/)
 
 ## Usage
 ```bash
-$ docker run --rm alpine/semver server -c -i minor 1.0.2
+$ docker run --rm alpine/semver semver -c -i minor 1.0.2
 1.1.0
     
-```
-## Example
-```bash
-$ docker run --rm marcelocorreia/semver semver -c -i minor 1.1.0
+$ docker run --rm marcelocorreia/semver semver -c -i patch 1.1.0
+1.1.1
+
 $ docker run --rm marcelocorreia/semver semver -c -i minor $(git describe --tags --abbrev=0)
+5.6.0
 ```
 
 # Full Example in Makefile
